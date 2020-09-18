@@ -66,6 +66,18 @@ variable "release_channel" {
   default     = "UNSPECIFIED"
 }
 
+variable "min_master_version" {
+  description = "The minimum Kubernetes version number for the master node n"
+  type        = string
+  default     = ""
+}
+
+variable "node_version" {
+  description = "The kubernetes version number for nodes k master node kubernetes version"
+  type        = string
+  default     = ""
+}
+
 // ----------------------------------------------------------------------------
 // Ingress
 // ----------------------------------------------------------------------------

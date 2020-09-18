@@ -1,5 +1,5 @@
 module "jx" {
-  source                  = "github.com/jenkins-x/terraform-google-jx?ref=jx3"
+  source                  = "github.com/jenkins-x/terraform-google-jx?ref=jx3-rapid"
   gcp_project             = var.gcp_project
   jx2                     = false
   gsm                     = var.gsm
@@ -18,6 +18,8 @@ module "jx" {
   jx_bot_username         = var.jx_bot_username
   jx_bot_token            = var.jx_bot_token
   release_channel         = var.release_channel
+  min_master_version      = var.min_master_version
+  node_version            = var.node_version
 }
 
 output "connect" {
