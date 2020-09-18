@@ -3,4 +3,4 @@ jx_git_url = "https://github.com/jstrachan/jx3-demo-catalog-dev"
 gcp_project = "jenkins-x-labs-bdd"
 gsm = true
 jx_bot_username = "jstrachan"
-cluster_name = "jstrachan-tekton-catalog"
+cluster_name = "jstrachan-catalog"
