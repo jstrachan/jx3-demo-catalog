@@ -60,6 +60,12 @@ variable "node_disk_type" {
   default     = "pd-standard"
 }
 
+variable "release_channel" {
+  description = "The GKE release channel to subscribe to.  See https://cloud.google.com/kubernetes-engine/docs/concepts/release-channels"
+  type        = string
+  default     = "UNSPECIFIED"
+}
+
 // ----------------------------------------------------------------------------
 // Ingress
 // ----------------------------------------------------------------------------
